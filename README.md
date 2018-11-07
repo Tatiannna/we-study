@@ -1,16 +1,3 @@
-# Backend Starter Code
-
-
-## Setup
-
-- Edit `package.json`
-    + Add your project name, version, description, authors
-    + Add any other packages you may need
-
-- Edit `config/config.json`
-    + Add your username, password, and database names
-
-
 ## Explanations
 
 - `/config/config.json`
