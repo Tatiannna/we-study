@@ -1,8 +1,6 @@
 const express = require('express');
 const models = require('../models');
-
 const router = express.Router();
-
 
 router.get('/', (req, res) => {
   res.json({
@@ -30,5 +28,8 @@ router.delete('/:id', (req, res) => {
   });
 });
 
-
 module.exports = router;
+
+
+
+

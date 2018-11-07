@@ -1,22 +1,26 @@
 {
-  "name": "backend-starter-code",
+  "name": "we-study",
   "version": "1.0.0",
-  "description": "Starter code for an Express/Sequelize backend.",
+  "description": "Application to create and join study groups at your college campus",
   "main": "app.js",
   "scripts": {
     "start": "nodemon -L app.js",
     "test": "jest"
   },
-  "author": "Edgardo Molina",
+  "author": "Tatianna Robinson",
   "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.1"
   },
   "dependencies": {
+    "bcrypt": "^3.0.2",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
     "express-handlebars": "^3.0.0",
     "nodemon": "^1.12.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pg": "^7.3.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.13.3"
