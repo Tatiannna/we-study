@@ -5,7 +5,6 @@
 - `/controllers`
     + This is where you should store all the logic handling URL routes and business logic for your app.
     + `index.js` is where you load up the different files
-    + You can write your controller code in many styles. I've provided you two options in the `home.js` and the `alt.js` files. Pick one style and use it for all of your controllers. This is really a matter of preference.
 - `/models`
     + This is where your sequelize models will go.
     + `index.js`: you **do not** have to modify this file. This file connects to the Postgres database for you, loads up all models in the folder, and sets up all associations.
