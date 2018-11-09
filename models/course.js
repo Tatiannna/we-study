@@ -5,18 +5,20 @@ module.exports = (sequelize, DataTypes) => {
             unique: true,
         },
         department_id: {
-            //how to reference a foreign key
-            //see if i should implement it here or in associates
             type: DataTypes.INTEGER,
-        }
+        },
         name: {
             type: DataTypes.TEXT,
-        }
+        },
     });
 
     Course.associate = (models) => {
-        //figure out how to use foreign key
-        models.Course.belongsTo(Department);
+        //adds foreign key to Course
+        //should i be using the attribute name of the foreign key in dept?
+        department_id: {
+        models.Course.belongsTo(Department, {foreignKey: 'id', targetKey: 'department_id'});
     }
+
+    return Course;
 
 }
