@@ -1,6 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     const Course = sequelize.define('course', {
         id: {
+            primaryKey: true,
             type: DataTypes.INTEGER,
             unique: true,
         },
@@ -20,5 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     return Course;
+
     }
 }
+
+

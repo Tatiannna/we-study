@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt-nodejs');
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('user', {
     id: {
+      primaryKey: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
@@ -33,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
     password: {
       type: DataTypes.VIRTUAL,
       allowNull: false,
-      validate {
+      validate: {
         notEmpty: true,
         isAlphanumeric:true,
       },

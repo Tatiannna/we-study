@@ -1,11 +1,12 @@
 module.exports = (sequelize, DataTypes) => {
     const Department = sequelize.define('department', {
         id: {
+            primaryKey: true,
             type: DataTypes.INTEGER,
             unique: true,
         },
         name: {
-            type: sequelize.ENUM,
+            type: DataTypes.ENUM,
             values: ['CSCI', 'ENG', 'CHEM', 'BIOL', 'MATH', 'CHIN']
         },
     });
