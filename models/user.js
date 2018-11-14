@@ -42,7 +42,8 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   User.associate = (models) => {
-    models.User.hasMany(models.Session)
+    /* Before this line of code can be use the session needs to be created */
+    //models.User.hasMany(models.Session)
   }
 
   User.beforeCreate((user) =>

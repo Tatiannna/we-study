@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         //adds foreign key to Course
         //should i be using the attribute name of the foreign key in dept?
         department_id: {
-        models.Course.belongsTo(Department, {foreignKey: 'id', targetKey: 'department_id'});
+        models.Course.belongsTo(models.Department, {foreignKey: 'id', targetKey: 'department_id'});
     }
 
     return Course;
