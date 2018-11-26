@@ -9,29 +9,21 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: true,
       },
     },
-    building_id: {
+    building_name: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         notEmpty: true,
       },
     },
-    room_id: {
-      type: DataTypes.STRING,
+    room_number: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       unique: true,
       validate: {
         notEmpty: true,
         len: [2, 14],
       },
-    description: {
-      type: DataTypes.String,
-      allowNull: false,
-      validate: {
-        notEmpty: true,
-        len: [10, 80],
-      },
-    },
     },
   });
 
