@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
     });
 
     Department.associate = (models) => {
-        models.Department.hasMany(models.Course);
-    }
 
-    return Department;
+        models.Department.hasMany(models.Course);
+
+    }
 }

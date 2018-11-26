@@ -16,10 +16,12 @@ module.exports = (sequelize, DataTypes) => {
     Course.associate = (models) => {
         //adds foreign key to Course
         //should i be using the attribute name of the foreign key in dept?
+
         // department_id: {
             //, {foreignKey: 'id', targetKey: 'department_id'}
         models.Course.belongsTo(models.Department);
         
+
     }
     return Course;
 }
