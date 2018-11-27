@@ -15,4 +15,6 @@ module.exports = (sequelize, DataTypes) => {
         models.Department.hasMany(models.Course);
 
     }
+    
+    return Department;
 }

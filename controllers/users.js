@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-  models.User.findAll({where: {firstName: 'Tatianna'}}).then((listOfUsers) => {
+  models.User.findAll({where: {first_name: 'Tatianna'}}).then((listOfUsers) => {
   		res.json(listOfUsers)
   });
 });
