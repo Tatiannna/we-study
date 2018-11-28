@@ -3,10 +3,10 @@ const models = require('../models');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  //res.render('sign-up');
-  res.json({
-    msg: "Successful GET to '/sign-up' route"
-  });
+  res.render('sign-up');
+  // res.json({
+  //   msg: "Successful GET to '/sign-up' route"
+  // });
 });
 
 router.post('/', (req, res) => {
