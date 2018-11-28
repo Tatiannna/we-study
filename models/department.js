@@ -5,15 +5,12 @@ module.exports = (sequelize, DataTypes) => {
         //     unique: true,
         // },
         name: {
-            type: DataTypes.ENUM,
-            values: ['CSCI', 'ENG', 'CHEM', 'BIOL', 'MATH', 'CHIN']
+            type: DataTypes.STRING,
         },
     });
 
     Department.associate = (models) => {
-
         models.Department.hasMany(models.Course);
-
     }
     
     return Department;
