@@ -20,8 +20,6 @@ module.exports = (sequelize, DataTypes) => {
         // department_id: {
             //, {foreignKey: 'id', targetKey: 'department_id'}
         models.Course.belongsTo(models.Department);
-        
-
     }
     return Course;
 }
