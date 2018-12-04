@@ -1,4 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
+    
     const Session = sequelize.define('session', {
         date: {
             type: DataTypes.DATE,

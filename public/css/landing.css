@@ -1,0 +1,16 @@
+body {
+	background-image: url(/img/books.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-length: 100%;
+	
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	margin-top: 20%;
+	font-size: 100px;
+	text-shadow: 4px 4px #000000;
+}
+
